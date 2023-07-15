@@ -3,7 +3,7 @@ import LogoNavbar from "../assets/LogoNavbar.png";
 
 function Navbar(props) {
   return (
-    <div className="w-full flex justify-between bg-white sticky top-0">
+    <div className="w-full flex justify-between bg-white sticky top-0 z-20">
       <div className="mx-[20px] my-[10px]">
         <img src={LogoNavbar} alt="Logo" className="w-[60px] hover:shadow-2xl" />
       </div>

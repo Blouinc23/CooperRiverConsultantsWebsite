@@ -6,11 +6,11 @@ import ComputerData from "../assets/ComputerData.png";
 function Software(props) {
   return (
     <div className="flex flex-col items-center">
-      <h1 className="font-roboto font-bold text-[58px]">Software Expertise</h1>
-      <img src={ToolLogos} alt="Tool Logos" className="h-[60px] mt-[10px]" />
+      <h1 className="font-roboto font-bold text-[54px]">Software Expertise</h1>
+      <img src={ToolLogos} alt="Tool Logos" className="w-[500px] mt-[10px]" />
       <div className="flex self-start flex-row">
         <div className="relative">
-          <div className="z-0 mt-[20px] mx-[20px]">
+          <div className="z-0 mt-[20px] ml-[20px]">
             <svg
               width="665"
               height="270"
@@ -28,13 +28,13 @@ function Software(props) {
               <rect
                 x="30"
                 y="31"
-                width="600"
+                width="550"
                 height="210"
                 rx="12"
                 fill="white"
               />
-              <foreignObject x="10" y="10" width="700" height="250">
-                <div className="font-roboto text-[20px] mx-[120px] mt-[40px] leading-[2.2rem]">
+              <foreignObject x="10" y="10" width="550" height="250">
+                <div className="font-roboto text-[18px] ml-[120px] mt-[40px] leading-[2.2rem]">
                   Have a specific tool that your company uses? Want help
                   managing data integration with it? We offer complete data
                   management services and can help you and your team become more

@@ -7,7 +7,7 @@ function HeroSection(props) {
   return (
     <div className="w-full flex justify-center gap-[100px] my-[100px]">
       <div className="flex flex-col justify-center">
-        <img src={TextLogo} alt="Text Logo" className="w-[1200px]" />
+        <img src={TextLogo} alt="Text Logo" className="w-[1000px]" />
         <h1 className="font-roboto font-bold text-[34px]">Product and Data Management Tailored to Your Needs</h1>
         <img src={BusinessIcons} alt="Business Icons" className="w-[550px] mt-[25px]" />
       </div>

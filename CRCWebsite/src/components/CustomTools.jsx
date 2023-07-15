@@ -5,15 +5,20 @@ import CodeSnippet from "../assets/CodeSnippet.png";
 function CustomTools(props) {
   return (
     <div className="flex flex-col items-center">
-      <h1 className="font-roboto font-bold text-[58px]">Software Expertise</h1>
+      <h1 className="font-roboto font-bold text-[58px]">Custom Tool Development</h1>
       <img
         src={LanguageLogos}
         alt="Language Logos"
         className="h-[60px] mt-[10px]"
       />
       <div className="flex self-start flex-row">
+      <img
+          src={CodeSnippet}
+          alt="Code Snippet"
+          className="w-[250px] h-[250px] self-end mr-[10px]"
+        />
         <div className="relative">
-          <div className="z-0 mt-[20px] mx-[20px]">
+          <div className="z-0 mt-[20px] mr-[20px]">
             <svg
               width="618"
               height="228"
@@ -40,11 +45,7 @@ function CustomTools(props) {
             </svg>
           </div>
         </div>
-        <img
-          src={CodeSnippet}
-          alt="Code Snippet"
-          className="w-[250px] h-[250px] self-end"
-        />
+        
       </div>
     </div>
   );

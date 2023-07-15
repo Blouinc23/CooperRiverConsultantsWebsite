@@ -2,6 +2,7 @@ import React from "react";
 import HeroSection from "../components/HeroSection";
 import Software from "../components/Software";
 import CustomTools from "../components/CustomTools";
+import Services from "../components/Services";
 
 function Home(props) {
   return (
@@ -10,10 +11,13 @@ function Home(props) {
         <HeroSection />
       </div>
       <div className="flex gap-[50px] w-full justify-center">
-            <Software />
-            <CustomTools />
+        <Software />
+        <CustomTools />
       </div>
-      <footer><h1>test</h1></footer>
+      <Services />
+      <footer>
+        <h1>test</h1>
+      </footer>
     </>
   );
 }
