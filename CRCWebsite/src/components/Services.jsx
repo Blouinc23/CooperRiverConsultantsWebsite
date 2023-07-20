@@ -1,13 +1,17 @@
 import React from "react";
 import Datalines from "../assets/Datalines.png";
+import Lottie from "lottie-react";
+import CustomerExperienceAnim from "../assets/jsonAnimations/CustomerExperienceAnim.json";
+import DataAnalyticsAnim from "../assets/jsonAnimations/DataAnalyticsAnim.json";
+import eCommerceAnim from "../assets/jsonAnimations/eCommerceAnim.json";
 
 function Services(props) {
   return (
     <>
       <div className="flex flex-col relative">
-        <div className="flex gap-[40px] mt-[100px] justify-center items-center z-10 mr-[100px]">
+        <div className="flex gap-[40px] mt-[100px] justify-center items-center z-10 mr-[100px]" id="eCommerce">
           <div>
-            <img src="https://via.placeholder.com/650x570" alt="Placeholder" />
+            <Lottie animationData={eCommerceAnim} id="eCommereceAnimation" style={{width:'25vw', marginRight:'100px'}}/>
           </div>
           <div>
             <h1 className="font-roboto font-bold text-[48px] mb-[20px]">
@@ -64,9 +68,9 @@ function Services(props) {
           </div>
         </div>
 
-        <div className="flex gap-[40px] mt-[100px] justify-center items-center z-10 mr-[100px]">
-          <div>
-            <img src="https://via.placeholder.com/650x570" alt="Placeholder" />
+        <div className="flex gap-[40px] mt-[100px] justify-center items-center z-10 mr-[100px]" id='DataAnalysis'>
+        <div>
+            <Lottie animationData={DataAnalyticsAnim} id="DataAnalyticsAnimation" style={{width:'25vw', marginRight:'100px'}}/>
           </div>
           <div>
             <h1 className="font-roboto font-bold text-[48px] mb-[20px]">
@@ -123,9 +127,9 @@ function Services(props) {
           </div>
         </div>
 
-        <div className="flex gap-[40px] mt-[100px] justify-center items-center z-10 mr-[100px]">
-          <div>
-            <img src="https://via.placeholder.com/650x570" alt="Placeholder" />
+        <div className="flex gap-[40px] mt-[100px] justify-center items-center z-10 mr-[100px]" id='CustomerExperience'>
+        <div>
+            <Lottie animationData={CustomerExperienceAnim} id='CustomerExperienceAnimation' style={{width:'25vw', marginRight:'100px'}}/>
           </div>
           <div>
             <h1 className="font-roboto font-bold text-[48px] mb-[20px]">
@@ -181,7 +185,13 @@ function Services(props) {
             </svg>
           </div>
         </div>
-        <img src={Datalines} alt="Data Lines" className="h-[1420px] right-[14rem] absolute z-0 mt-[240px] opacity-40" />
+        <div className="bg-liteblue absolute w-[100%] flex justify-center mt-[240px] pl-[50vw]">
+          <img
+            src={Datalines}
+            alt="Data Lines"
+            className="h-[1420px] right-[14rem] z-0  opacity-40"
+          />
+        </div>
       </div>
     </>
   );

@@ -3,20 +3,27 @@ import HeroSection from "../components/HeroSection";
 import Software from "../components/Software";
 import CustomTools from "../components/CustomTools";
 import Services from "../components/Services";
+import Footer from "../components/Footer";
 
 function Home(props) {
   return (
     <>
       <div>
-        <HeroSection />
+        <section id="home">
+          <HeroSection />
+        </section>
       </div>
-      <div className="flex gap-[50px] w-full justify-center">
-        <Software />
-        <CustomTools />
-      </div>
-      <Services />
+      <section id="about">
+        <div className="flex gap-[50px] w-full justify-center items-center">
+          <Software />
+          <CustomTools />
+        </div>
+        <Services />
+      </section>
       <footer>
-        <h1>test</h1>
+        <section id="contact">
+          <Footer></Footer>
+        </section>
       </footer>
     </>
   );
